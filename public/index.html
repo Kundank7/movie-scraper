@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Movie Scraper</h1>
+  <input type="text" id="movieInput">
+  <button onclick="searchMovie()">Search</button>
+  <div id="results"></div>
+  <script>
+    async function searchMovie() {
+      const movie = document.getElementById('movieInput').value;
+      window.location.href = `/download/${movie}`;
+    }
+  </script>
+</body>
+</html>
